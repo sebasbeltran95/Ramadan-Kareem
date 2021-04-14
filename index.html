@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Kareem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <img src="img/mosque.jpg" class="mosque">
+        <header>
+            <a href="#" class="logo">Ramadan</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1" class="active">Inicio</a></li>
+                <li><a href="#" style="--i:2">Acerca</a></li>
+                <li><a href="#" style="--i:3">Calendario</a></li>
+                <li><a href="#" style="--i:4">Blog</a></li>
+                <li><a href="#" style="--i:5">Contactos</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Happy Ramadan Kareem</h2>
+                <p>
+                    lorem ipsum dolor sit amet, consectetur
+                     adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna
+                       aliqua. ut enim ad minim vaniam, quis
+                        nostrud exceritation ullamco laboris
+                         nisi ut aliquip ex ea commodo
+                </p>
+                <a href="#">Leer mas </a>
+            </div>
+        </div>
+
+        <ul class="sci">
+            <li><a href="#" style="--i:12;"><img src="img/facebook.png" ></a></li>
+            <li><a href="#" style="--i:13;"><img src="img/twitter.png" ></a></li>
+            <li><a href="#" style="--i:14;"><img src="img/instagram.png" ></a></li>
+        </ul>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
